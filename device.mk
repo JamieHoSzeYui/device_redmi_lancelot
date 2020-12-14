@@ -52,8 +52,7 @@ PRODUCT_PACKAGES += \
     
 # Init
 PRODUCT_PACKAGES += \
-    init.mt6768.rc \
-    fstab.mt6768
+    recovery.fstab
     
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
