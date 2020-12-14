@@ -9,7 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # Get non-open-source specific aspects
-$(call inherit-product-if-exists, vendor/unihertz/Atom_L/Atom_L-vendor.mk)
+$(call inherit-product-if-exists, vendor/redmi/lancelot/lancelot-vendor.mk)
 
 # Define Dynamic Partition support
 PRODUCT_TARGET_VNDK_VERSION := 29
@@ -40,36 +40,25 @@ PRODUCT_PACKAGES += \
 
 # fstab
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6771:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6771
+    $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
     
 # NFC stack (AOSP)
 PRODUCT_PACKAGES += \
     NfcNci
 
-# ImsInit hack
+# ImsInit hac
 PRODUCT_PACKAGES += \
     ImsInit
     
 # Init
 PRODUCT_PACKAGES += \
-    init.mt6771.rc \
-    fstab.mt6771
-
-# Keylayouts
-PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/idc/mtk-kpd.idc:$(TARGET_COPY_OUT_SYSTEM)/usr/idc/mtk-kpd.idc \
-    $(LOCAL_PATH)/keylayout/mtk-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-kpd.kl \
-    $(LOCAL_PATH)/keylayout/mtk-tpd-kpd.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/mtk-tpd-kpd.kl \
-    $(LOCAL_PATH)/keylayout/fingerprint_key.kl:$(TARGET_COPY_OUT_SYSTEM)/usr/keylayout/fingerprint_key.kl
+    init.mt6768.rc \
+    fstab.mt6768
     
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay \
     $(LOCAL_PATH)/overlay-lineage
-
-# Overlays -- replace official
-PRODUCT_PACKAGES += \
-    FrameworkResOverlay
 
 # Telephony Jars
 PRODUCT_BOOT_JARS += \
