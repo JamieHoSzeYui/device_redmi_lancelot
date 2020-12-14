@@ -1,23 +1,25 @@
-Device configuration for Unihertz Atom L (Atom_L)
+Device configuration for Redmi 9 (lancelot / cattail / galahad)
 =================================================
 
-The Unihertz Atom L (codenamed simply _"Atom_L"_) is a rugged small smartphone from Unihertz, released in July 2020. It is similar to the Atom XL but without integrated amateur radio support.
-
-~~The following patches is needed to build a working image of LineageOS:~~
-
-~~<https://review.potatoproject.co/c/PotatoProject/frameworks_base/+/4850>~~
+The Redmi 9 (codenamed lancelot / cattail / galahad) is a mid-range smartphone from Xiaomi, released in June 2020.
 
 Patches needed for this to work have already been merged to LineageOS as change [282359](https://review.lineageos.org/c/LineageOS/android_frameworks_base/+/282359) and change [282360](https://review.lineageos.org/c/LineageOS/android_frameworks_opt_net_wifi/+/282360).
 
-| Basic                   | Spec Sheet                                                                                                                     |
-| -----------------------:|:------------------------------------------------------------------------------------------------------------------------------ |
-| CPU                     | Octa-core                                                                                                                      |
-| Chipset                 | Mediatek Helio P60                                                                                                             |
-| GPU                     | Mali-G72 MP3                                                                                                                   |
-| Memory                  | 6 GB RAM                                                                                                                       |
-| Shipped Android Version | 10                                                                                                                             |
-| Storage                 | 128 GB                                                                                                                         |
-| Battery                 | Non-removable Li-Po 4300 mAh battery                                                                                           |
-| Display                 | 1136 x 640 pixels, ~16:9 ratio (~300 ppi density)                                                                              |
-| Camera (Rear - Main)    | 48MP                                                                                                                           |
-| Camera (Front)          | 8MP                                                                                                                            |
+Note : The changes are still needed I think
+
+
+| Feature                 | Specification                     |
+| :---------------------- | :-------------------------------- |
+| CPU                     | Octa-core (2x2.0 GHz Cortex-A75   |
+|                         | 6x1.8 GHz Cortex-A55)             |
+| Chipset                 | MediaTek Helio G80 (12nm)         |
+| GPU                     | Mali-G52 MC2                      |
+| Memory                  | 3/4/6 GB                          |
+| Shipped Android Version | 10.0                              |
+| Storage                 | 32/64/128 GB                      |
+| Battery                 | 5020 mAh (non-removable)          |
+| Dimensions              | 163.3 x 77 x 9.1 mm               |
+| Display                 | 1080 x 2340 pixels, 6.53"         |
+| Rear Camera             | 13 MP + 8 MP + 5 MP + 2 MP        |
+| Front Camera            | 8 MP                             |
+| Release Date            | June 10, 2020                     |
