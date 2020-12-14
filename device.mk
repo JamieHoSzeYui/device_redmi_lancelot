@@ -40,7 +40,7 @@ PRODUCT_PACKAGES += \
 
 # fstab
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/rootdir/etc/fstab.mt6768:$(TARGET_COPY_OUT_RAMDISK)/fstab.mt6768
+    $(LOCAL_PATH)/rootdir/etc/recovery.fstab:$(TARGET_COPY_OUT_RAMDISK)/recovery.fstab
     
 # NFC stack (AOSP)
 PRODUCT_PACKAGES += \
