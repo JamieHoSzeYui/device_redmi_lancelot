@@ -21,13 +21,4 @@ PRODUCT_BRAND := Redmi
 PRODUCT_MODEL := Redmi 9
 PRODUCT_MANUFACTURER := xiaomi
 
-# Boot animation
-TARGET_SCREEN_HEIGHT := 1136
-TARGET_SCREEN_WIDTH := 640
-
-# Build info
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE=lancelot \
-    PRODUCT_NAME=Redmi 9 \
-    
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
